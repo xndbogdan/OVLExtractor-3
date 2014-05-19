@@ -1,0 +1,39 @@
+NOTE: The padding bytes are assumptions and may not be paddings at al, however as there are almost always a few nullbytes/paddingbytes at the end of animation it is assumed that these are in the file to pad the file to 4 bytes
+
+Seagul L1:
+Vertices: 103 (103%3 == 1!)
+Indices: 252 (84 faces)
+Unknowns: 47/89
+Size per animation: 456(114 lines), 1b padding(455b per anim)
+
+Seagul L2
+Vertices: 62 (62%3 == 2!)
+Indices: 123 (41 faces)
+Unknown: 39/52
+Size per animation: 312(78 lines), 0b padding (312b per anim)
+
+Seagul L3:
+Vertices: 29 (29%3 == 2!)
+Indices: 39 (13 faces)
+Unknown 18/23
+Size per animation: 144(36 lines), 3b padding (141b per anim)
+
+Duck L1:
+Vertices: 63 (63%3 == 0)
+Indices: 240 (81 faces)
+Unknown: 47/47
+Size per animation: 332(83 lines), 3b padding (329b per anim)
+
+Mackeral L1:
+Vertices: 6	(6%3 == 0)
+Indices: 6 (2 faces)
+Unknown: 6/1
+Size per animation: 28 (7 lines), 1b padding (27b per anim)
+
+Template:
+Vertices:
+Indices:
+Unknown:
+Size per animation:
+
+Other research: When one of the unknowns is too high it seems to be causing an EOF error which isn't handled which could mean they are some kind of padding indicators
